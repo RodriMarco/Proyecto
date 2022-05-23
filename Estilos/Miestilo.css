@@ -42,11 +42,11 @@ header ul li a:hover {
     text-shadow: 1px 1px 2px black;
 }
 
-#div-logo{
+#div-logo {
     margin: auto;
     position: relative;
     z-index: 100;
-} 
+}
 
 
 #inicio {
@@ -75,23 +75,6 @@ header ul li a:hover {
     font-weight: bold;
     background-color: gray;
 }
-
-/* Inicio de Mapa de google 
-.mapa-responsivo{
-    overflow:hidden;
-    padding-bottom:0;
-    position:relative;
-    height: 450px;;
-}
-
-.mapa-responsivo iframe{
-    left:0;
-    top:0;
-    height:450px;
-    width:100%;
-    position:absolute;
-}
- Fin de Mapa de google */
 
 #div-contacto {
     background-color: rgb(226, 92, 22);
@@ -140,6 +123,11 @@ header ul li a:hover {
     background-color: #6da9ed;
 }
 
+.carousel-item{
+    height: 700px;
+    width: 100%;
+}
+
 footer {
     height: 40px;
     background-color: black;
@@ -148,5 +136,6 @@ footer {
     justify-content: center;
     color: whitesmoke;
 }
+
 
 /* CSS Para computadora */
