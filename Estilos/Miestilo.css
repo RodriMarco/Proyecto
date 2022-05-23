@@ -1,0 +1,152 @@
+/* CSS Para computadora */
+header {
+    height: 120px;
+    background-color: black;
+    display: flex;
+    padding-top: 10px;
+}
+
+header ul#Secciones {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header ul li {
+    display: block;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+header ul li a {
+    display: block;
+    margin-left: 1px;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+    color: rgb(226, 92, 22);
+    text-shadow: 1px 1px 2px rgb(214, 104, 0);
+}
+
+header ul li a:link {
+    text-decoration: none;
+    color: rgb(226, 92, 22);
+    text-shadow: 1px 1px 2px rgb(226, 92, 10);
+
+}
+
+header ul li a:hover {
+    text-shadow: 1px 1px 2px black;
+}
+
+#div-logo{
+    margin: auto;
+    position: relative;
+    z-index: 100;
+} 
+
+
+#inicio {
+    background: url("../Imagenes/IronBoxingClub.jpg") no-repeat;
+    background-size: cover;
+    min-height: 99vh;
+    position: relative;
+}
+
+#inicio:hover {
+    filter: grayscale(70%);
+}
+
+#inicio h1 {
+    visibility: hidden;
+}
+
+#inicio:hover h1 {
+    visibility: visible;
+    position: absolute;
+    bottom: 4em;
+    left: 1.4em;
+    z-index: 6;
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: gray;
+}
+
+/* Inicio de Mapa de google 
+.mapa-responsivo{
+    overflow:hidden;
+    padding-bottom:0;
+    position:relative;
+    height: 450px;;
+}
+
+.mapa-responsivo iframe{
+    left:0;
+    top:0;
+    height:450px;
+    width:100%;
+    position:absolute;
+}
+ Fin de Mapa de google */
+
+#div-contacto {
+    background-color: rgb(226, 92, 22);
+}
+
+.formulario p {
+    display: flex;
+    color: rgb(44, 31, 27);
+}
+
+.formulario p label {
+    color: rgb(44, 31, 27);
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario p input {
+    width: 70%;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario textarea {
+    width: 90%;
+    resize: none;
+    height: 100px;
+}
+
+.formulario input[type="submit"] {
+    background: #2e64a1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #6da9ed;
+}
+
+footer {
+    height: 40px;
+    background-color: black;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+/* CSS Para computadora */
