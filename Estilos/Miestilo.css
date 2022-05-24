@@ -10,7 +10,6 @@ header ul#Secciones {
     display: inline-block;
     list-style: none;
     text-align: center;
-    size: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -20,6 +19,7 @@ header ul li {
     position: relative;
     float: left;
     text-align: center;
+
 }
 
 header ul li a {
@@ -29,6 +29,7 @@ header ul li a {
     text-decoration: none;
     color: rgb(226, 92, 22);
     text-shadow: 1px 1px 2px rgb(214, 104, 0);
+    font-size: 25px;
 }
 
 header ul li a:link {
@@ -57,7 +58,9 @@ header ul li a:hover {
 }
 
 #inicio:hover {
+    transform: scale(1.01);
     filter: grayscale(70%);
+    transition: all 0.3s ease;
 }
 
 #inicio h1 {
@@ -123,12 +126,24 @@ header ul li a:hover {
     background-color: #6da9ed;
 }
 
-.carousel-item{
+.carousel-item {
     height: 700px;
     width: 100%;
 }
 
-footer {
+/* footer div a:hover{
+    background: url("../Imagenes/ig_logo_icon_darkorange.png") no-repeat;
+}
+
+footer p {
+    height: 40px;
+    background-color: black;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    color: whitesmoke;
+} */
+footer  {
     height: 40px;
     background-color: black;
     display: flex;
