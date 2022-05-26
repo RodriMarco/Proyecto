@@ -133,11 +133,25 @@ header ul li a:hover {
 
 .imgredonda{
     border-radius: 50%;
+    min-height: fit-content;
     max-height: 250px;
-    margin: 3px;
+    margin: 7px;
 
 }
 
+#titulosecc2{
+    text-align: center;
+    margin: 10px;
+    background-color: black;
+}
+
+.descripcionprofes{
+    text-align: center;
+}
+
+#Profesoresbg{
+    background-color: rgb(226, 92, 22);
+}
 /* footer div a:hover{
     background: url("../Imagenes/ig_logo_icon_darkorange.png") no-repeat;
 }
