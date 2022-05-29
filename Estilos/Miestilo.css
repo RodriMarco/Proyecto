@@ -1,4 +1,8 @@
 /* CSS Para computadora */
+body{
+    background-color: rgb(30, 30, 30);
+}
+
 header {
     height: 120px;
     background-color: black;
@@ -83,6 +87,7 @@ header ul li a:hover {
     background-color: rgb(226, 92, 22);
 }
 
+
 .formulario p {
     display: flex;
     color: rgb(44, 31, 27);
@@ -131,10 +136,17 @@ header ul li a:hover {
     width: 100%;
 }
 
+th{
+    color: rgb(226, 92, 22);
+}
+td{
+    color: rgb(226, 92, 22);
+}
 .imgredonda{
     border-radius: 50%;
     min-height: fit-content;
-    max-height: 250px;
+    height: 250px;
+    width: 250px;
     margin: 7px;
 
 }
@@ -142,15 +154,24 @@ header ul li a:hover {
 #titulosecc2{
     text-align: center;
     margin: 10px;
-    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
 }
 
 .descripcionprofes{
     text-align: center;
 }
 
+.descequipos{
+    padding: 10%;
+    color: white;
+}
+
 #Profesoresbg{
-    background-color: rgb(226, 92, 22);
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    
 }
 /* footer div a:hover{
     background: url("../Imagenes/ig_logo_icon_darkorange.png") no-repeat;
@@ -171,6 +192,7 @@ footer  {
     padding-top: 10px;
     justify-content: center;
     color: whitesmoke;
+    margin: 5px;
 }
 
 
