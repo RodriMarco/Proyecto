@@ -1,46 +1,32 @@
-/* CSS Para computadora */
-body{
+body {
     background-color: rgb(30, 30, 30);
 }
 
 header {
-    height: 120px;
     background-color: black;
-    display: flex;
-    padding-top: 10px;
+    /* display: flex; */
+    
 }
 
 header ul#Secciones {
-    display: inline-block;
+    /* display: inline-block; */
     list-style: none;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-header ul li {
-    display: block;
-    position: relative;
-    float: left;
-    text-align: center;
-
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
 }
 
 header ul li a {
     display: block;
-    margin-left: 1px;
-    padding: 5px 15px 5px 15px;
     text-decoration: none;
     color: rgb(226, 92, 22);
     text-shadow: 1px 1px 2px rgb(214, 104, 0);
-    font-size: 25px;
 }
 
 header ul li a:link {
     text-decoration: none;
     color: rgb(226, 92, 22);
     text-shadow: 1px 1px 2px rgb(226, 92, 10);
-
 }
 
 header ul li a:hover {
@@ -74,8 +60,6 @@ header ul li a:hover {
 #inicio:hover h1 {
     visibility: visible;
     position: absolute;
-    bottom: 4em;
-    left: 1.4em;
     z-index: 6;
     display: block;
     color: white;
@@ -89,13 +73,12 @@ header ul li a:hover {
 
 
 .formulario p {
-    display: flex;
     color: rgb(44, 31, 27);
+    display: flex;
 }
 
 .formulario p label {
     color: rgb(44, 31, 27);
-    min-width: 80px;
     display: flex;
     align-items: center;
 }
@@ -111,18 +94,14 @@ header ul li a:hover {
 .formulario textarea {
     width: 90%;
     resize: none;
-    height: 100px;
 }
 
 .formulario input[type="submit"] {
     background: #2e64a1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     color: white;
-    font-size: 16px;
-    padding: 6px 20px;
     width: auto;
     position: relative;
-    left: 5rem;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -132,68 +111,219 @@ header ul li a:hover {
 }
 
 .carousel-item {
-    height: 700px;
     width: 100%;
 }
 
-th{
+th {
     color: rgb(226, 92, 22);
 }
-td{
+
+td {
     color: rgb(226, 92, 22);
 }
-.imgredonda{
+
+.imgredonda {
     border-radius: 50%;
     min-height: fit-content;
-    height: 250px;
-    width: 250px;
-    margin: 7px;
-
 }
 
-#titulosecc2{
+#titulosecc2 {
     text-align: center;
-    margin: 10px;
     color: white;
     text-shadow: 1px 1px 2px black;
 
 }
 
-.descripcionprofes{
+.descripcionprofes {
     text-align: center;
 }
 
-.descequipos{
+.descequipos {
     padding: 10%;
     color: white;
 }
 
-#Profesoresbg{
+#Profesoresbg {
     background-color: #ff4e00;
     background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+@media screen and (min-width:200px){
+    /* CSS Para celular */
     
-}
-/* footer div a:hover{
-    background: url("../Imagenes/ig_logo_icon_darkorange.png") no-repeat;
+    header {
+        height: 60px;
+        display: flex;
+        padding-top: 5px;
+    }
+
+    header ul#Secciones {
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    header ul li {
+        display: block;
+        position: relative;
+        float: left;
+        text-align: center;
+
+    }
+
+    header ul li a {
+        margin-left: 1px;
+        padding: 5px 15px 5px 15px;
+        font-size: 12px;
+    }
+
+    #div-logo {
+        margin: auto;
+        position: relative;
+        z-index: 100;
+    }
+
+    #div-logo img{
+        transform: scale(0.5);
+    }
+
+    #inicio:hover h1 {
+        bottom: 4em;
+        left: 1.4em;
+    }
+
+    .formulario p label {
+        min-width: 80px;
+    }
+
+    .formulario textarea {
+        height: 50px;
+    }
+
+    .formulario input[type="submit"] {
+        font-size: 8px;
+        padding: 2px 8px;
+        left: 5rem;
+    }
+
+    .carousel-item {
+        height: 200px;
+    }
+
+    .imgredonda {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        margin: 3px;
+
+    }
+
+    #titulosecc2 {
+        margin: 2px;
+    }
+
+    footer {
+        height: 30px;
+        padding-top: 5px;
+        margin: 5px;
+    }
+
+
+    /* CSS Para celular */
+
 }
 
-footer p {
-    height: 40px;
-    background-color: black;
-    display: flex;
-    padding-top: 10px;
-    justify-content: center;
-    color: whitesmoke;
-} */
-footer  {
-    height: 40px;
-    background-color: black;
-    display: flex;
-    padding-top: 10px;
-    justify-content: center;
-    color: whitesmoke;
-    margin: 5px;
+
+@media screen and (min-width:900px) {
+
+
+    /* CSS Para computadora */
+    
+    header {
+        height: 120px;
+        display: flex;
+        padding-top: 10px;
+    }
+
+    header ul#Secciones {
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    header ul li {
+        display: block;
+        position: relative;
+        float: left;
+        text-align: center;
+
+    }
+
+    header ul li a {
+        margin-left: 1px;
+        padding: 5px 15px 5px 15px;
+        font-size: 25px;
+    }
+
+    #div-logo {
+        margin: auto;
+        position: relative;
+        z-index: 100;
+    }
+
+    #inicio:hover h1 {
+        bottom: 4em;
+        left: 1.4em;
+    }
+
+    .formulario p {
+        display: flex;
+    }
+
+    .formulario p label {
+        min-width: 80px;
+    }
+
+    .formulario textarea {
+        height: 100px;
+    }
+
+    .formulario input[type="submit"] {
+        font-size: 16px;
+        padding: 6px 20px;
+        left: 5rem;
+    }
+
+    .carousel-item {
+        height: 700px;
+    }
+
+    .imgredonda {
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        margin: 7px;
+
+    }
+
+    #titulosecc2 {
+        margin: 10px;
+    }
+
+    footer {
+        height: 40px;
+        padding-top: 10px;
+        margin: 5px;
+    }
+
+
+    /* CSS Para computadora */
 }
-
-
-/* CSS Para computadora */
