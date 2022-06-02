@@ -34,7 +34,6 @@ ul li a:hover {
     "Areaimg  AreaSecc";
 
     grid-template-columns: 20% auto;
-    grid-template-rows: 120px;
 }
 
 #Secc{
@@ -48,10 +47,12 @@ ul li a:hover {
     grid-area: Areaimg;
 }
 
-
 #inicio {
-    background: url("../Imagenes/IronBoxingClub.jpg") no-repeat;
+    background-image: url("../Imagenes/IronBoxingClub.jpg");
+    background-position: no-repeat;
+    background-position: center center;
     background-size: cover;
+    /* background-attachment: fixed; */
     height: auto;
     /* position: relative; */
     grid-area: ImgPrinc;
@@ -80,6 +81,7 @@ ul li a:hover {
 #div-contacto {
     background-color: rgb(226, 92, 22);
     grid-area: Contacto;
+    padding-left: 3%;
 }
 #div-mapa {
     grid-area: Mapa;
@@ -89,6 +91,7 @@ ul li a:hover {
 .formulario p {
     color: rgb(44, 31, 27);
     display: flex;
+    margin-left: 4%;
 }
 
 .formulario p label {
@@ -107,6 +110,7 @@ ul li a:hover {
 
 .formulario textarea {
     width: 90%;
+    margin-right: 5px;
     resize: none;
 }
 
@@ -172,13 +176,6 @@ footer {
 
 
  @media screen and (min-width:200px){
-     header {
-        height: 60px;
-        display: flex;
-        padding-top: 5px;
-        padding-left: 0;
-    }
-
     #grillainicio{
         display: grid;
         grid-template-areas:
@@ -188,39 +185,32 @@ footer {
         "Contacto Contacto";
 
         grid-template-columns: auto ;
-        grid-template-rows:  200px auto auto;
+        grid-template-rows:  200px auto;
     }
 
+    .grilla1{
+        grid-template-rows: 45px;
+    }
 
-    header ul#Secciones {
+    ul#Secciones {
         display: inline-block;
         margin-top: 5px;
         margin-bottom: 5px;
         padding: 0;
     }
 
-    header ul li {
-        display: block;
-        position: relative;
+    ul#Secciones li {
         float: left;
         text-align: center;
-
     }
 
-    header ul li a {
-        margin-left: 1px;
-        padding: 5px 15px 5px 15px;
-        font-size: 12px;
+    ul#Secciones li a {
+        margin-left: 13px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 10px;
     }
 
-    #div-logo img{
-        transform: scale(0.3);
-    }
-
-    #div-logo.col-2 a{
-        margin: 0;
-        padding: 0;
-    }
     #inicio:hover h1 {
         bottom: 4em;
         left: 1.4em;
@@ -252,6 +242,11 @@ footer {
 
     }
 
+    #div-logo img{
+        width: 75px;
+        
+    } 
+
     #titulosecc2 {
         margin: 2px;
     }
@@ -270,6 +265,9 @@ footer {
 
     /* CSS Para computadora */
     
+    .grilla1{
+        grid-template-rows: 120px;
+    }
 
     #grillainicio{
         display: grid;
@@ -278,7 +276,7 @@ footer {
         "ImgPrinc ImgPrinc"
         "Mapa     Contacto";
 
-        grid-template-columns: auto 25%;
+        grid-template-columns: auto 35%;
         grid-template-rows:  700px auto;
     }
 
@@ -288,18 +286,18 @@ footer {
         margin-bottom: 30px;
     }
 
-    ul li {
+    ul#Secciones li {
         float: left;
         text-align: center;
     }
 
-    ul li a {
+    ul#Secciones li a {
         padding: 5px 15px 5px 15px;
         font-size: 30px;
     }
 
     #div-logo img{
-        transform: scale(1);
+        width: 200px;
         margin: 1%;
     }
 
