@@ -132,17 +132,16 @@ ul li a:hover {
     width: 100%;
 }
 
-th {
+table th, td{
     color: rgb(226, 92, 22);
 }
 
-td {
+/* td {
     color: rgb(226, 92, 22);
-}
+} */
 
 .imgredonda {
     border-radius: 50%;
-    min-height: fit-content;
 }
 
 #titulosecc2 {
@@ -152,19 +151,40 @@ td {
 
 }
 
-.descripcionprofes {
-    text-align: center;
+#cuerposecc2{
+    margin: 0;
+    padding: 10%;
+    padding-top:0;
 }
+
+
+
+#titulosecc2{grid-area: Titulo;}
+#Profe1{grid-area: P1;}
+#Profe2{grid-area: P2;}
+#Profe3{grid-area: P3;}
+#Profe4{grid-area: P4;}
+#Profe5{grid-area: P5;}
+#Profe6{grid-area: P6;}
+#Profe7{grid-area: P7;}
+#Profe8{grid-area: P8;}
+#Profe9{grid-area: P9;}
+
+
 
 .descequipos {
     padding: 10%;
     color: white;
 }
 
-#Profesoresbg {
+.grillaprofes {
+    margin-top: 10%;
     background-color: #ff4e00;
     background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 
+}
+.grillaprofes div{
+    text-align: center;
 }
 
 footer {
@@ -190,6 +210,23 @@ footer {
 
     .grilla1{
         grid-template-rows: 45px;
+    }
+
+    .grillaprofes{
+        display: grid;
+        grid-template-areas:
+        "Titulo"
+        "P1" 
+        "P2"
+        "P3"
+        "P4" 
+        "P5"
+        "P6"
+        "P7" 
+        "P8" 
+        "P9" ;
+        grid-column: 100%;
+        grid-template-rows:auto;
     }
 
     ul#Secciones {
@@ -234,12 +271,29 @@ footer {
         height: 200px;
     }
 
-    .imgredonda {
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        margin: 3px;
+    table th, td{
+        font-size: 6px;
+        text-align: center;
+    }
 
+
+    .imgredonda {
+        height: 150px;
+        width: 150px;
+        margin: 3px;
+    }
+    .container{
+        margin-top: 15%;
+    }
+    .container .imgredonda {
+        height: 120px;
+        width: 120px;
+        margin: 3px;
+    }
+
+    .descequipos {
+        font-size: 12px;
+        margin: 3px;
     }
 
     #div-logo img{
@@ -255,6 +309,7 @@ footer {
         height: 30px;
         padding-top: 5px;
         margin: 5px;
+        font-size: 9px;
     }
 
 }
@@ -280,6 +335,18 @@ footer {
         grid-template-rows:  700px auto;
     }
 
+    .grillaprofes{
+        display: grid;
+        grid-template-areas:
+        "Titulo Titulo Titulo"
+        "P1 P2 P3"
+        "P4 P5 P6"
+        "P7 P8 P9" ;
+
+        grid-column: 33% 33% 33%;
+        grid-template-rows: 40px 450px;
+    }
+    
     ul#Secciones {
         display: inline-block;
         margin-top: 30px;
@@ -329,11 +396,29 @@ footer {
     }
 
     .imgredonda {
-        border-radius: 50%;
         height: 250px;
         width: 250px;
         margin: 7px;
 
+    }
+
+    .container{
+        margin-top: 5%;
+    }
+    .container .imgredonda {
+        height: 250px;
+        width: 250px;
+        margin: 3px;
+    }
+
+    .descequipos {
+        font-size: 25px;
+        margin: 3px;
+    }
+
+    table th, td{
+        font-size: 20px;
+        text-align: center;
     }
 
     #titulosecc2 {
@@ -344,6 +429,7 @@ footer {
         height: 40px;
         padding-top: 10px;
         margin: 5px;
+        font-size: 15px;
     }
 
 
