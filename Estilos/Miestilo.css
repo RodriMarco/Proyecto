@@ -37,6 +37,7 @@ ul li a:hover {
 }
 
 #Secc{
+    text-align: left;
     grid-area: AreaSecc;
 }
 
