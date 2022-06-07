@@ -174,6 +174,7 @@ footer {
  @media screen and (min-width:200px){
      header {
         height: 60px;
+        width: 100%;
         display: flex;
         padding-top: 5px;
         padding-left: 0;
