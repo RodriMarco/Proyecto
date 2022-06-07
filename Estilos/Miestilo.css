@@ -34,10 +34,10 @@ ul li a:hover {
     "Areaimg  AreaSecc";
 
     grid-template-columns: 20% auto;
-    grid-template-rows: 120px;
 }
 
 #Secc{
+    text-align: left;
     grid-area: AreaSecc;
 }
 
@@ -48,10 +48,12 @@ ul li a:hover {
     grid-area: Areaimg;
 }
 
-
 #inicio {
-    background: url("../Imagenes/IronBoxingClub.jpg") no-repeat;
+    background-image: url("../Imagenes/IronBoxingClub.jpg");
+    background-position: no-repeat;
+    background-position: center center;
     background-size: cover;
+    /* background-attachment: fixed; */
     height: auto;
     /* position: relative; */
     grid-area: ImgPrinc;
@@ -80,6 +82,7 @@ ul li a:hover {
 #div-contacto {
     background-color: rgb(226, 92, 22);
     grid-area: Contacto;
+    padding-left: 3%;
 }
 #div-mapa {
     grid-area: Mapa;
@@ -89,6 +92,7 @@ ul li a:hover {
 .formulario p {
     color: rgb(44, 31, 27);
     display: flex;
+    margin-left: 4%;
 }
 
 .formulario p label {
@@ -107,6 +111,7 @@ ul li a:hover {
 
 .formulario textarea {
     width: 90%;
+    margin-right: 5px;
     resize: none;
 }
 
@@ -128,17 +133,16 @@ ul li a:hover {
     width: 100%;
 }
 
-th {
+table th, td{
     color: rgb(226, 92, 22);
 }
 
-td {
+/* td {
     color: rgb(226, 92, 22);
-}
+} */
 
 .imgredonda {
     border-radius: 50%;
-    min-height: fit-content;
 }
 
 #titulosecc2 {
@@ -148,19 +152,40 @@ td {
 
 }
 
-.descripcionprofes {
-    text-align: center;
+#cuerposecc2{
+    margin: 0;
+    padding: 10%;
+    padding-top:0;
 }
+
+
+
+#titulosecc2{grid-area: Titulo;}
+#Profe1{grid-area: P1;}
+#Profe2{grid-area: P2;}
+#Profe3{grid-area: P3;}
+#Profe4{grid-area: P4;}
+#Profe5{grid-area: P5;}
+#Profe6{grid-area: P6;}
+#Profe7{grid-area: P7;}
+#Profe8{grid-area: P8;}
+#Profe9{grid-area: P9;}
+
+
 
 .descequipos {
     padding: 10%;
     color: white;
 }
 
-#Profesoresbg {
+.grillaprofes {
+    margin-top: 10%;
     background-color: #ff4e00;
     background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 
+}
+.grillaprofes div{
+    text-align: center;
 }
 
 footer {
@@ -172,14 +197,6 @@ footer {
 
 
  @media screen and (min-width:200px){
-     header {
-        height: 60px;
-        width: 100%;
-        display: flex;
-        padding-top: 5px;
-        padding-left: 0;
-    }
-
     #grillainicio{
         display: grid;
         grid-template-areas:
@@ -189,39 +206,49 @@ footer {
         "Contacto Contacto";
 
         grid-template-columns: auto ;
-        grid-template-rows:  200px auto auto;
+        grid-template-rows:  200px auto;
     }
 
+    .grilla1{
+        grid-template-rows: 45px;
+    }
 
-    header ul#Secciones {
+    .grillaprofes{
+        display: grid;
+        grid-template-areas:
+        "Titulo"
+        "P1" 
+        "P2"
+        "P3"
+        "P4" 
+        "P5"
+        "P6"
+        "P7" 
+        "P8" 
+        "P9" ;
+        grid-column: 100%;
+        grid-template-rows:auto;
+    }
+
+    ul#Secciones {
         display: inline-block;
         margin-top: 5px;
         margin-bottom: 5px;
         padding: 0;
     }
 
-    header ul li {
-        display: block;
-        position: relative;
+    ul#Secciones li {
         float: left;
         text-align: center;
-
     }
 
-    header ul li a {
-        margin-left: 1px;
-        padding: 5px 15px 5px 15px;
-        font-size: 12px;
+    ul#Secciones li a {
+        margin-left: 13px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 10px;
     }
 
-    #div-logo img{
-        transform: scale(0.3);
-    }
-
-    #div-logo.col-2 a{
-        margin: 0;
-        padding: 0;
-    }
     #inicio:hover h1 {
         bottom: 4em;
         left: 1.4em;
@@ -245,13 +272,35 @@ footer {
         height: 200px;
     }
 
-    .imgredonda {
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        margin: 3px;
-
+    table th, td{
+        font-size: 6px;
+        text-align: center;
     }
+
+
+    .imgredonda {
+        height: 150px;
+        width: 150px;
+        margin: 3px;
+    }
+    .container{
+        margin-top: 15%;
+    }
+    .container .imgredonda {
+        height: 120px;
+        width: 120px;
+        margin: 3px;
+    }
+
+    .descequipos {
+        font-size: 12px;
+        margin: 3px;
+    }
+
+    #div-logo img{
+        width: 75px;
+        
+    } 
 
     #titulosecc2 {
         margin: 2px;
@@ -261,6 +310,7 @@ footer {
         height: 30px;
         padding-top: 5px;
         margin: 5px;
+        font-size: 9px;
     }
 
 }
@@ -271,6 +321,9 @@ footer {
 
     /* CSS Para computadora */
     
+    .grilla1{
+        grid-template-rows: 120px;
+    }
 
     #grillainicio{
         display: grid;
@@ -279,28 +332,40 @@ footer {
         "ImgPrinc ImgPrinc"
         "Mapa     Contacto";
 
-        grid-template-columns: auto 25%;
+        grid-template-columns: auto 35%;
         grid-template-rows:  700px auto;
     }
 
+    .grillaprofes{
+        display: grid;
+        grid-template-areas:
+        "Titulo Titulo Titulo"
+        "P1 P2 P3"
+        "P4 P5 P6"
+        "P7 P8 P9" ;
+
+        grid-column: 33% 33% 33%;
+        grid-template-rows: 40px 450px;
+    }
+    
     ul#Secciones {
         display: inline-block;
         margin-top: 30px;
         margin-bottom: 30px;
     }
 
-    ul li {
+    ul#Secciones li {
         float: left;
         text-align: center;
     }
 
-    ul li a {
+    ul#Secciones li a {
         padding: 5px 15px 5px 15px;
         font-size: 30px;
     }
 
     #div-logo img{
-        transform: scale(1);
+        width: 200px;
         margin: 1%;
     }
 
@@ -332,11 +397,29 @@ footer {
     }
 
     .imgredonda {
-        border-radius: 50%;
         height: 250px;
         width: 250px;
         margin: 7px;
 
+    }
+
+    .container{
+        margin-top: 5%;
+    }
+    .container .imgredonda {
+        height: 250px;
+        width: 250px;
+        margin: 3px;
+    }
+
+    .descequipos {
+        font-size: 25px;
+        margin: 3px;
+    }
+
+    table th, td{
+        font-size: 20px;
+        text-align: center;
     }
 
     #titulosecc2 {
@@ -347,6 +430,7 @@ footer {
         height: 40px;
         padding-top: 10px;
         margin: 5px;
+        font-size: 15px;
     }
 
 
